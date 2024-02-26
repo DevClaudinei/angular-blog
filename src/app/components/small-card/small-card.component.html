@@ -2,12 +2,12 @@
   <div class="container__small-card-content">
     <div class="small-card__picture">
       <img
-        src="https://http2.mlstatic.com/D_NQ_NP_627344-MLB51336754340_082022-O.webp"
+        src= "{{ photoCover }}"
         alt=""
       >
     </div>
     <div class="small-card__title">
-      <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+      <h1><a [routerLink]="['content', id]"> {{ cardTitle }} </a></h1>
     </div>
   </div>
   <div class="container__small-car-separator">
